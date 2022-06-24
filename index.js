@@ -33,10 +33,6 @@ app.use(addSessionToTemplate())
 app.use(users) 
 app.use(auth)
 
-app.get("/",(req,res)=>{  
-    console.log(req.session)
-    return res.render("home")
-})
 
 app.listen(port,()=>{
     console.log("Listening on: http://localhost:"+port)
